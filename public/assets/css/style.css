@@ -1,67 +1,87 @@
-body {
-    &:before, &:after {
-      content: "";
-      position: fixed;
-      z-index: 10;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 60px;
-      background: linear-gradient(to bottom, #fff 10%, rgba(255, 255, 255, 0));
-    }
-    &:after {
-      top: auto;
-      bottom: 0;
-      background: linear-gradient(to top, #fff 50%, rgba(255, 255, 255, 0));
-    }
-  }
-  
-  .scroll {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+*{
+    margin:0;
+    padding:0;
+    font-family:'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width:100%;
+    /* box-sizing: border-box; */
+    overflow: hidden;
+}
+
+.bg{
+    height: 100%;
+    width:100%;
+    background-color: rgb(97, 110, 106);
+}
+
+.bg .c1{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: brown;
     position: absolute;
-    z-index: 1;
-    font-family: Roboto, sans-serif;
-    letter-spacing: 0.2em;
-    font-size: 11px;
-  
-    span {
-      display: block;
-    }
-  
-    svg {
-      margin-top: 10px;
-      width: 18px;
-      height: 18px;
-      animation: scroll 0.95s ease-in-out alternate infinite;
-      fill: none;
-      stroke: #000000;
-      stroke-linecap: round;
-      stroke-miterlimit: 10;
-      stroke-width: 1;
-    }
-  }
-  
-  .circle {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%; /* Changed from 40% to 50% for a perfect circle */
-    opacity: 0;
-    margin: -19px auto;
-    transition: transform 1s cubic-bezier(0.14, 0.15, 0.13, 0.99);
-    background-color: #000; /* Added background color for visibility */
-  }
-  
-  
-  @keyframes scroll {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(10px);
-    }
-  }
+    top:16%;
+    left: 22%;
+}
+
+.bg .c2{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-color: brown;
+    position: absolute;
+    top:58%;
+    left: 40%;
+}
+
+.bg .img{
+    width: 45%;
+    height: 530px;
+    background-image: url("../image/De2.png");
+    background-size: cover;
+    position: absolute;
+    top:20%;
+    left: 13%;
+}
+
+.bg .sc{
+    width: 40%;
+    height: 50%;
+    background-color: aliceblue;
+    padding: 40px 60px;
+    position: absolute;
+    top:25%;
+    left: 47%;
+    border-radius: 5px;
+    box-shadow: 0 2.6px 5.3px rgb(43, 166, 129),
+    0 10px 17.9px rgb(15, 60, 46),
+    0 22px 80px rgb(203, 237, 227);
+}
+
+.bg .sc h1{
+    color: blueviolet;
+}
+
+.bg .sc h2{
+    color:rgb(183, 208, 23);
+    font-size:28px;
+    font-weight: 700;
+    margin-top: 18px;
+}
+ 
+
+.bg .sc p{
+    color: rgb(55, 54, 56);
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+sup{
+    color: black;
+}
