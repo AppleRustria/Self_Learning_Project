@@ -33,7 +33,7 @@
   }
   
   .section-3 {
-    background-color: black;
+    background-color: #1E1E2C;
     margin-top: -100vh;
     position: relative;
     overflow: hidden;
@@ -47,6 +47,7 @@
   }
   .name {
     font-size: 150px;
+    color: aliceblue;
   }
   
   .box2 {
@@ -240,6 +241,7 @@
     text-transform: uppercase;
     margin-bottom: 5rem;
   }
+
 
   #granim-canvas {
     position: fixed; 
