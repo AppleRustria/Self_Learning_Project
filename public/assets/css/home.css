@@ -6,7 +6,7 @@
   
   @font-face {
     font-family: m;
-    src: url(./font/MargarethRosinante-Regular.otf);
+    src: url(../font/MargarethRosinante-Regular.otf);
   }
   
   body {
@@ -240,3 +240,12 @@
     text-transform: uppercase;
     margin-bottom: 5rem;
   }
+
+  #granim-canvas {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    z-index: -1;
+}
